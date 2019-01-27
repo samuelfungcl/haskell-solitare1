@@ -1,44 +1,34 @@
-# Haskell Assignment 2 - Eight Off Solitare
+# Functional Programming - Haskell
+# Solitaire 1
 
-## Marks obtained
-Data Structures 17 20
-
-Utilities 10 10
-
-Shuffle 15 15
-
-EODeal 13 15
-
-toFoundations 34 40
-
-TOTAL 89
-
-Data Structures:
-
-Suits are not Ord
-
-Tableau is [[Card]] no [Card]
-
-EODeal:
-
-A bit over complicated
-
-toFoundation
-
-Aces from the Cell (reserve) only can happens at the start of the game. No need to check
-
-recursivelly
-
-The function a bit confusing.
+## Description
+The assignment was to write code for a Haskell implementation of a Solitaire card game, particularly Eight-Off. The assignment provided me experiences of designing list-based and tuple-based data structures in Haskell and algorithms which defined the Eight-Off operations using recursion, mapping functions and comprehensios.
 
 
+## Functions
+1. pack
+Returns a deck of 52 cards
 
-Excellent testing.
+2. sCard
+Returns the given card's successor
 
-Really hard to follow the code if you do not respect the nomenclature.
+3. pCard
+Returns the given card's predecessor
 
-I assume that Cell is the Reserve and Tableau are the Columns
+4. isAce
+Checks if the card is an Ace card
 
-Try to avoid to add comments to the far right. You don’t know how readebly is in different
+5. isKing
+Checks if the card is a King card
 
-screen ‘s resolutions.
+6. shuffle
+Takes a deck of cards and shuffles them
+
+7. eODeal
+Shuffles an Eight Off Board
+
+8. toFoundations
+Moves all the possible Aces to the foundations pile to start off the game
+
+## Marks Obtained
+I received a first class grade (89%) for this assignment
